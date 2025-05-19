@@ -36,15 +36,30 @@ const hamburgerEl = document.getElementById("hamburger-el");
 const navHamburger = document.getElementsByClassName("proba")[0];
 const cancelHamburger = document.getElementById("cancel-hamburger");
 
-function toggleMenu() {
+let lastTouchTime = 0;
+
+function toggleMenu(event) {
+  const now = Date.now();
+
+  // If this event is too close to the last touch, ignore it
+  if (event.type === "click" && now - lastTouchTime < 500) {
+    return;
+  }
+
+  if (event.type === "touchstart") {
+    lastTouchTime = now;
+  }
+
   navHamburger.classList.toggle("active");
 }
 
+// Attach both events safely
+hamburgerEl.addEventListener("touchstart", toggleMenu);
 hamburgerEl.addEventListener("click", toggleMenu);
+
+cancelHamburger.addEventListener("touchstart", toggleMenu);
 cancelHamburger.addEventListener("click", toggleMenu);
 
-hamburgerEl.addEventListener("touchstart", toggleMenu);
-cancelHamburger.addEventListener("touchstart", toggleMenu);
 
 
 
