@@ -407,19 +407,28 @@ footer{
     align-items: center;
   }
   .section1-right {
-    background-color: white;
+background: linear-gradient(to bottom, #080454 0%, #080454 1%, white 1%, white 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
 
   .section1-right img {
     margin: 0;
   }
+
+  .section1-right svg{
+    border: none;
+    position: relative;
+    top: 0;
+  }
   .section1-left {
     padding: 1em 2em;
     width: 100%;
+    border-bottom: none;
+    background-color: #080454;
   }
 
   .section1-left-elements {
@@ -450,10 +459,15 @@ footer{
   }
   .section2ImageBox {
     margin-top: 0;
+    margin-bottom: 0;
   }
   .imageBox-item {
     flex: 0 1 80%;
     margin-bottom: 3em;
+  }
+
+  .imageBox-item img{
+    height: 55%;
   }
 
   .imageBox-item-text {
@@ -471,6 +485,8 @@ footer{
   .section3IconsCounter {
     margin-top: 0;
   }
+
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
