@@ -468,6 +468,7 @@ background: linear-gradient(to bottom, #080454 0%, #080454 1%, white 1%, white 1
 
   .imageBox-item img{
     height: 55%;
+    margin-bottom: 0.4em;
   }
 
   .imageBox-item-text {
