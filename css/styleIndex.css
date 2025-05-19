@@ -599,13 +599,18 @@ background: linear-gradient(to bottom, #080454 0%, #080454 1%, white 1%, white 1
   }
   .section1-left-elements p {
     font-size: 1.08rem;
+
   }
   .section1-left-elements h1,
   .section1-left-elements p {
     width: 90%;
   }
   .section1-left-elements {
-    margin-left: 0.5em;
+    margin-left: 1em;
+
+  }
+  .section1Intro{
+    padding-left: 2em;
   }
   #btn-AboutUs {
     padding: 0.5em 3em;
@@ -640,7 +645,6 @@ background: linear-gradient(to bottom, #080454 0%, #080454 1%, white 1%, white 1
     font-size: 1.1rem;
   }
 }
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   h1 {
