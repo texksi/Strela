@@ -17,8 +17,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5em auto;
-  width: 100%;
+  margin: 1em auto;
+  width: 90%;
 }
 
 nav {
