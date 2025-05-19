@@ -32,3 +32,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const hamburgerEl = document.getElementById("hamburger-el");
+const navHamburger = document.getElementsByClassName("proba")[0]; // Fix here
+
+hamburgerEl.addEventListener("click", function () {
+  navHamburger.classList.toggle("active");
+});
+
+const cancelHamburger = document.getElementById("cancel-hamburger");
+
+cancelHamburger.addEventListener("click", function(){
+    navHamburger.classList.toggle("active");
+
+})
+
+
+
+   
+  });
+});
+
