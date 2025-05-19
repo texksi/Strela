@@ -33,22 +33,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const hamburgerEl = document.getElementById("hamburger-el");
-const navHamburger = document.getElementsByClassName("proba")[0]; // Fix here
-
-hamburgerEl.addEventListener("click", function () {
-  navHamburger.classList.toggle("active");
-});
-
+const navHamburger = document.getElementsByClassName("proba")[0];
 const cancelHamburger = document.getElementById("cancel-hamburger");
 
-cancelHamburger.addEventListener("click", function(){
-    navHamburger.classList.toggle("active");
+function toggleMenu() {
+  navHamburger.classList.toggle("active");
+}
 
-})
+hamburgerEl.addEventListener("click", toggleMenu);
+cancelHamburger.addEventListener("click", toggleMenu);
+
+hamburgerEl.addEventListener("touchstart", toggleMenu);
+cancelHamburger.addEventListener("touchstart", toggleMenu);
 
 
 
    
-  });
-});
 
