@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+       <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="stylesheet" href="css/normalized.css">
+        <link rel="stylesheet" href="css/styleIndex.css">
+        <link rel="stylesheet" href="css/styleLinije.css">
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin></script>
+
+        <title>ASP Strela Obrenovac</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo-image">
+                <img src="imagesIndexPage/logoNavigation.png"
+                    alt="LogoASPStrela" />
+            </div>
+            <div class="proba">
+                <div class="hamburger-cancel">
+                    <i class="fa-solid fa-xmark" id="cancel-hamburger"></i>
+                </div>
+                <ul class="hamburger-menu">
+                    <li class="hamburger-menu-item"><a
+                            href="index.html">POCETNA</a></li>
+                    <li class="hamburger-menu-item"><a href="oNama.html">O
+                            NAMA</a></li>
+                    <li class="hamburger-menu-item"><a href="#">LINIJE</a></li>
+                    <li class="hamburger-menu-item">
+                        <a href="contact.html">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger-bar">
+                <i class="fa-solid fa-bars" id="hamburger-el"></i>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a href="index.html" class="nav-item-link">POCETNA</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="oNama.html" class="nav-item-link">O NAMA</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#"
+                            class="nav-item-link current-page">LINIJE</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="contact.html"
+                            class="nav-item-link">KONTAKT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="LinijaSearch">
+                <label for="potez">Izaberite potez</label>
+                <select name="potez" id="potez">
+                    <option value="defaultPotez">Izaberite potez</option>
+                    <option value="potez100">Potez 100</option>
+                    <option value="potez600">Potez 600</option>
+                    <option value="potez700">Potez 700</option>
+                    <option value="potez800">Potez 800</option>
+                </select>
+
+                <label for="linije">Izaberite liniju</label>
+                <select name="linije" id="linije">
+                    <option value="defaultPotez">Izaberite liniju</option>
+                </select>
+            </section>
+
+            <section class="LinijaPrikaz hidden">
+                <h1>Linija 101, Padisnka skela - Omladinski stadion</h1>
+                <div class="redVoznje">
+                    <div class="redVoznjeDugme">
+                        <button class="dugmeRedVoznjePravac1"
+                            onclick="prikaziPravac1()">Padniska skela</button>
+                        <button class="dugmeRedVoznjePravac2"
+                            onclick="prikaziPravac2()">Omladinski
+                            stadion</button>
+                    </div>
+                    <div class="tabelaRedVoznjePravac1 hidden">
+                        <table>
+                            <tr>
+                                <th>Sat</th>
+                                <th>Radni dan</th>
+                                <th>Subota</th>
+                                <th>Nedelja</th>
+                            </tr>
+                            <tr class="visible">
+                                <td>04</td>
+                                <td>00 20 40</td>
+                                <td>00 25 50</td>
+                                <td>00 25 50</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>05</td>
+                                <td>00 15 26 37 48 59</td>
+                                <td>13 35 57</td>
+                                <td>13 33 51</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>06</td>
+                                <td>09 19 28 37 46 55</td>
+                                <td>13 27 41 54</td>
+                                <td>07 23 38 51</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>07</td>
+                                <td>04 13 22 30 38 46 54</td>
+                                <td>06 17 28 39 50</td>
+                                <td>04 17 29 42 55</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>08</td>
+                                <td>02 10 18 27 35 43 52</td>
+                                <td>01 12 23 34 45 57</td>
+                                <td>08 20 33 46 58</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>09</td>
+                                <td>00 09 17 26 34 43 51 59</td>
+                                <td>08 20 31 43 54</td>
+                                <td>11 24 36 49</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>10</td>
+                                <td>08 16 25 33 41 50 58</td>
+                                <td>06 18 30 41 53</td>
+                                <td>02 14 27 41 55</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>11</td>
+                                <td>07 15 23 32 40 49 57</td>
+                                <td>05 17 29 41 53</td>
+                                <td>09 22 35 49</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>12</td>
+                                <td>05 14 22 31 39 48 57</td>
+                                <td>04 16 28 40 52</td>
+                                <td>02 15 29 42 55</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>13</td>
+                                <td>05 14 22 30 38 47 55</td>
+                                <td>04 16 27 39 51</td>
+                                <td>09 22 35 49</td>
+                            </tr>
+
+                            <!-- Skriveni redovi -->
+                            <tr class="hidden">
+                                <td>14</td>
+                                <td>03 11 19 27 36 44 52</td>
+                                <td>03 15 27 39 50</td>
+                                <td>02 15 29 42 55</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>15</td>
+                                <td>00 09 17 26 34 42 51 59</td>
+                                <td>02 14 26 38 50</td>
+                                <td>09 22 35 49</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>16</td>
+                                <td>07 16 24 33 41 50 58</td>
+                                <td>02 13 25 37 49</td>
+                                <td>02 15 29 42 55</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>17</td>
+                                <td>06 15 23 32 40 49 57</td>
+                                <td>01 13 25 36 47 59</td>
+                                <td>09 22 35 49</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>18</td>
+                                <td>06 14 22 31 39 48 56</td>
+                                <td>10 22 33 45 56</td>
+                                <td>02 15 29 42 55</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>19</td>
+                                <td>05 13 22 30 39 47 56</td>
+                                <td>08 19 31 42 54</td>
+                                <td>09 22 35 50</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>20</td>
+                                <td>05 13 22 31 41 51</td>
+                                <td>05 17 28 40 52</td>
+                                <td>05 20 35 54</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>21</td>
+                                <td>02 12 23 33 44 55</td>
+                                <td>04 16 28 40 52</td>
+                                <td>15 40</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>22</td>
+                                <td>06 20 35 50</td>
+                                <td>05 30 55</td>
+                                <td>05 30 55</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>23</td>
+                                <td>05 20 40</td>
+                                <td>20 45</td>
+                                <td>20 45</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>00</td>
+                                <td>00</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="tabelaRedVoznjePravac2 hidden">
+                        <table>
+                            <tr>
+                                <th>Sat</th>
+                                <th>Radni dan</th>
+                                <th>Subota</th>
+                                <th>Nedelja</th>
+                            </tr>
+                            <tr class="visible">
+                                <td>04</td>
+                                <td>00 20 40</td>
+                                <td>00 25 50</td>
+                                <td>00 25 50</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>05</td>
+                                <td>00 15 26 37 48 59</td>
+                                <td>13 35 57</td>
+                                <td>13 33 51</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>06</td>
+                                <td>09 19 28 37 46 55</td>
+                                <td>13 27 41 54</td>
+                                <td>07 23 38 51</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>07</td>
+                                <td>04 13 22 30 38 46 54</td>
+                                <td>06 17 28 39 50</td>
+                                <td>04 17 29 42 55</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>08</td>
+                                <td>02 10 18 27 35 43 52</td>
+                                <td>01 12 23 34 45 57</td>
+                                <td>08 20 33 46 58</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>09</td>
+                                <td>00 09 17 26 34 43 51 59</td>
+                                <td>08 20 31 43 54</td>
+                                <td>11 24 36 49</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>10</td>
+                                <td>08 16 25 33 41 50 58</td>
+                                <td>06 18 30 41 53</td>
+                                <td>02 14 27 41 55</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>11</td>
+                                <td>07 15 23 32 40 49 57</td>
+                                <td>05 17 29 41 53</td>
+                                <td>09 22 35 49</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>12</td>
+                                <td>05 14 22 31 39 48 57</td>
+                                <td>04 16 28 40 52</td>
+                                <td>02 15 29 42 55</td>
+                            </tr>
+                            <tr class="visible">
+                                <td>13</td>
+                                <td>05 14 22 30 38 47 55</td>
+                                <td>04 16 27 39 51</td>
+                                <td>09 22 35 49</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>14</td>
+                                <td>03 11 19 27 36 44 52</td>
+                                <td>03 15 27 39 50</td>
+                                <td>02 15 29 42 55</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>15</td>
+                                <td>00 09 17 26 34 42 51 59</td>
+                                <td>02 14 26 38 50</td>
+                                <td>09 22 35 49</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>16</td>
+                                <td>07 16 24 33 41 50 58</td>
+                                <td>02 13 25 37 49</td>
+                                <td>02 15 29 42 55</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>17</td>
+                                <td>06 15 23 32 40 49 57</td>
+                                <td>01 13 25 36 47 59</td>
+                                <td>09 22 35 49</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>18</td>
+                                <td>06 14 22 31 39 48 56</td>
+                                <td>10 22 33 45 56</td>
+                                <td>02 15 29 42 55</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>19</td>
+                                <td>05 13 22 30 39 47 56</td>
+                                <td>08 19 31 42 54</td>
+                                <td>09 22 35 50</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>20</td>
+                                <td>05 13 22 31 41 51</td>
+                                <td>05 17 28 40 52</td>
+                                <td>05 20 35 54</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>21</td>
+                                <td>02 12 23 33 44 55</td>
+                                <td>04 16 28 40 52</td>
+                                <td>15 40</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>06 20 35 50</td>
+                                <td>05 30 55</td>
+                                <td>05 30 55</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>23</td>
+                                <td>05 20 40</td>
+                                <td>20 45</td>
+                                <td>20 45</td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>00</td>
+                                <td>00</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                    <button id="next" class="hidden">Sledeca strana</button>
+
+                </div>
+
+            </section>
+            <div id="mapaLinije">
+            </div>
+
+        </main>
+
+        <script src="css/javaScript/index.js"></script>
+        <script src="https://kit.fontawesome.com/0ed02fb7a0.js"
+            crossorigin="anonymous"></script>
+        <script src="css/javaScript/linije.js"></script>
+        <script src="css/javaScript/mape.js"></script>
+    </body>
+</html>
