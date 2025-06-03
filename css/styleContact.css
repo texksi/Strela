@@ -1,0 +1,389 @@
+body {
+  background-color: #f9f9f9;
+}
+
+img {
+  max-width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: block !important;
+  opacity: 1 !important;
+  z-index: 10;
+}
+
+.section1HeaderContact {
+  background-color: #080454;
+  color: #f9f9f9;
+  width: 100%;
+  padding: 2.5em 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section1HeaderContact p {
+  color: #f9f9f9;
+}
+
+.section1HeaderContact h1 {
+  margin-bottom: 0.5em;
+}
+
+.section2KontaktInfo {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* ili row ako želiš da arcticle elementi budu jedan pored drugog */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.KontaktTekst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.KontaktTekst p {
+  text-align: justify;
+}
+
+.kontakt-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4em 3.5em 3em;
+}
+
+.kontakt-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5em;
+}
+
+.kontakt-icon a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #080454;
+}
+
+.kontakt-icon a:visited {
+  text-decoration: none;
+}
+
+.kontakt-icon a svg {
+  height: 10vh;
+  margin-bottom: 1em;
+  border-radius: 30px;
+  padding: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #e9ecf4;
+  color: #080454;
+  transition: all 0.3s ease;
+}
+
+.kontakt-icon a:hover svg {
+  height: 10vh;
+  margin-bottom: 1em;
+  border-radius: 30px;
+  padding: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #080454;
+  color: #e9ecf4;
+}
+
+.kontakt-icon a p {
+  font-size: 1.1rem;
+}
+
+.section3Form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 2em;
+}
+.section3Form h3,
+.section3Form p {
+  text-align: center;
+  width: 90%;
+  margin: 0.4em auto;
+}
+
+.form-article {
+  background-color: #e9ecf4;
+  padding: 1.5em;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 90%;
+  margin: 0 auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+.labele {
+  width: 100%;
+  color: #080454;
+  font-size: 1.1rem;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+input {
+  margin-bottom: 1em;
+  padding: 0.3em;
+  border-radius: 10px;
+  color: #080454;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 1px solid #080454;
+  cursor: pointer;
+}
+
+textarea {
+  border-radius: 10px;
+  padding: 0.4em;
+  overflow: hidden;
+  max-width: 100%;
+  min-width: 100%;
+  font-size: 1rem;
+  border: 1px solid #080454;
+  cursor: pointer;
+  color: #080454;
+  font-weight: 500;
+  resize: vertical;
+}
+
+form button {
+  width: 70%;
+  margin: 1em auto;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  color: #080454;
+  background-color: #f9f9f9;
+  border: 2px solid #080454;
+  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #3a36a5;
+  background-color: #f5f5f5;
+}
+
+form button:hover {
+  background-color: #080454;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+form button:active {
+  transform: scale(0.98);
+}
+
+.map-article {
+  background-color: #080454;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5em;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 90%;
+  margin: 2em auto 0;
+}
+
+.map-article h2,
+.map-article p {
+  color: #f9f9f9;
+  width: 100%;
+  text-align: center;
+}
+
+.mapa {
+  width: 100%;
+  margin: 1.5em auto;
+}
+iframe {
+  width: 100%;
+  margin: 0 auto;
+  max-height: 70vh;
+}
+
+.socials-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.mreze-icons {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  width: 100%;
+}
+
+.socials-contact h4 {
+  color: #e9ecf4;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 0.65em;
+  font-size: 1.2rem;
+}
+.mreze-icons a svg {
+  color: #080454;
+  height: 3vh;
+  padding: 0.1em;
+}
+
+.mreze-icons a {
+  padding: 0.4em 0.3em; /* ispravljen padding */
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  background-color: #e9ecf4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+
+@media (min-width: 640px) {
+  .form-article {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 6em;
+    padding: 1.5em 3em;
+  }
+
+  .map-article {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    padding: 2em 5em;
+  }
+}
+
+/* Tablets (≥ 768px) */
+@media (min-width: 768px) {
+  .form-article {
+    width: 70%;
+    padding: 2em 4em;
+  }
+}
+
+/* Laptops / small desktops (≥ 1024px) */
+@media (min-width: 1024px) {
+  .kontakt-icons {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .KontaktTekst {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .KontaktTekst p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .kontakt-icon {
+    flex: 0 1 30%;
+  }
+  .section3Form {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* ensures children stretch to same height */
+    width: 90%;
+  }
+
+  .form-article,
+  .map-article {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em 4em;
+  }
+}
+
+/* Desktops (≥ 1280px) */
+@media (min-width: 1280px) {
+  .kontakt-icons {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .KontaktTekst {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .KontaktTekst p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .kontakt-icon {
+    flex: 0 1 30%;
+  }
+
+  .section3Form {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* ensures children stretch to same height */
+    width: 80%;
+    margin-bottom: 6em;
+  }
+
+  .form-article,
+  .map-article {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em 5em;
+  }
+}
+
+/* Large desktops / TVs (≥ 1536px) */
+@media (min-width: 1536px) {
+  /* e.g. max out layout widths */
+}

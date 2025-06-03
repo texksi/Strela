@@ -1,0 +1,478 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.section1AboutUs {
+  background-color: #080454;
+}
+
+.aboutUs-header {
+  width: 90%;
+  margin: 1em auto;
+  padding: 1.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUs-header h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #f9f9f9;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.section2OurMission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.OurMisson-text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2-title {
+  color: #080454;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.p-text {
+  font-size: 0.98rem;
+  color: #080454;
+  text-align: center;
+  width: 90%;
+  letter-spacing: 0.3px;
+}
+
+.OurMission-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 2em auto;
+}
+
+.OurMission-images-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.8em;
+}
+
+.OurMission-images-row img {
+  max-width: 100%;
+  flex: 0 1 48%;
+  width: 45%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  object-fit: cover;
+}
+.OurMission-images-column {
+  display: flex;
+  width: 100%;
+  min-height: 10%;
+}
+
+.OurMission-images-column img {
+  max-width: 100%;
+  max-height: 35vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  object-position: calc(50%) calc(50% - 40px);
+}
+
+.section3VozniPark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+.swiper {
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-bottom: 5.5em;
+  background-color: #f5f5f5;
+}
+
+.swiper-wrapper {
+  background-color: #f5f5f5;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #e0e0e0;
+  padding: 1.5em 1em;
+  border-radius: 10px;
+}
+
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+  color: #080454 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 10;
+  display: block !important;
+  opacity: 1;
+}
+
+.swiper-slide-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.swiper-slide-card img {
+  width: 100%;
+  min-height: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: bottom;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.swiper-slide-card h4 {
+  font-size: 1.5rem;
+  color: #080454;
+  margin-bottom: 0.5em;
+  border: 4px solid #080454;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 20px;
+  padding: 0.2em 0;
+}
+
+.swiper-slide-card p {
+  font-size: 1rem;
+  color: #080454;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.section4Elementi {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  background-color: #f5f5f5;
+}
+
+.elementiContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto 4em;
+  padding: 1.5em 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: #f5f5f5;
+  width: 90%;
+}
+
+.elementiTekst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.elementiTekst p {
+  text-align: justify;
+  padding: 1em;
+}
+
+.elementiTekst .h2-title {
+  margin-bottom: 0;
+}
+
+.elementiSlika {
+  width: 90%;
+  margin: 0.5em auto;
+  min-height: 250px;
+  max-height: 400px;
+  overflow: hidden; /* Dodaj ovde ako želiš da slika ne "štrči" van okvira */
+  padding: 1em;
+}
+
+.elementiSlika img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section5EndAboutUs {
+  width: 90%;
+  margin: -2em auto 2em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-aboutUs {
+  font-weight: 500;
+  font-style: italic;
+  width: 90%;
+  margin: 1em auto;
+  color: #080454;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .section2OurMission {
+    width: 85%;
+    margin: 2em auto;
+  }
+
+  .section2OurMission .p-text {
+    width: 100%;
+  }
+
+  .OurMission-images-row {
+    width: 100%;
+  }
+  .OurMission-images-row img {
+    max-height: 78vh;
+  }
+
+  .OurMission-images-row img:first-of-type {
+    margin-right: 3em;
+  }
+
+  .OurMission-images-column img {
+    max-height: 50vh;
+    object-position: calc(50%) calc(50% - 60px);
+  }
+
+  .swiper {
+    width: 80%;
+    max-height: fit-content;
+  }
+
+  .section4Elementi {
+    width: 85%;
+  }
+}
+
+/* Tablets (≥ 768px) */
+@media (min-width: 768px) {
+  .OurMission-images-row img {
+    max-height: 55vh;
+  }
+
+  .OurMission-images-row img:first-of-type {
+    margin-right: 5.5em;
+    margin-left: 1em;
+  }
+
+  .OurMission-images-row img:last-of-type {
+    margin-right: 1em;
+  }
+
+  .OurMission-images-column img {
+    object-position: calc(50%) calc(50% - 110px);
+    max-height: 45vh;
+  }
+
+  .p-text {
+    font-size: 1.1rem;
+  }
+
+  .p-text:first-of-type {
+    margin-bottom: 1em;
+  }
+
+  .swiper {
+    width: 90%;
+    background-color: #f9f9f9;
+  }
+
+  .swiper-slide-card {
+    width: 100%;
+  }
+
+  .swiper-slide-card h4 {
+    width: 100%;
+    margin: 0 auto 1em;
+  }
+
+  .swiper-slide-card p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .elementiContainer {
+    width: 80%;
+  }
+
+  .elementiSlika {
+    padding-top: 0;
+    margin-top: 0;
+    height: 500px;
+  }
+
+  .elementiSlika img {
+    width: 85%;
+  }
+
+  .elementiTekst{
+    width: 85%;
+    }
+
+  .section5EndAboutUs span {
+    font-size: 1.5rem;
+  }
+}
+
+/* Laptops / small desktops (≥ 1024px) */
+@media (min-width: 1024px) {
+  .h2-title {
+    font-size: 2.3rem;
+  }
+  .section2OurMission {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .OurMisson-text:last-of-type {
+    display: none;
+  }
+
+  .OurMisson-text {
+    flex: 0 1 55%;
+  }
+
+  #textOurMission1024 {
+    text-align: justify;
+  }
+
+  .OurMission-images {
+    flex: 0 1 40%;
+    margin-right: 0;
+  }
+
+  .OurMission-images-row img:first-of-type {
+    margin-left: 0;
+    margin-right: 2em;
+  }
+
+  .OurMission-images-row img:last-of-type {
+    margin-right: 0;
+  }
+
+  .OurMission-images-row img {
+    max-height: 30vh;
+  }
+
+  .OurMission-images-column img {
+    max-height: 23vh;
+  }
+
+  .swiper {
+    width: 90%;
+  }
+
+  .swiper-slide-card {
+    overflow: hidden;
+    padding: 0 0.5em;
+  }
+
+  .section4Elementi {
+    margin-top: 3.5em;
+  }
+
+  .elementiContainer{
+    flex-direction: row-reverse;
+    width: 90%;
+  }
+}
+
+/* Desktops (≥ 1280px) */
+@media (min-width: 1280px) {
+  .OurMission-images-row img {
+    min-height: 35vh;
+    max-height: 40vh;
+  }
+
+  .OurMission-images {
+    padding-top: 2em;
+  }
+
+  .elementiContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .elementiTekst {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 55%;
+  }
+
+  .elementiTekst h2 {
+    margin-bottom: 1em;
+    font-size: 2.3rem;
+  }
+
+  .elementiTekst p {
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-top: 0.5em;
+  }
+
+.elementiContainer{
+  width: 95%;
+}
+
+.elementiSlika{
+  flex: 0 1 45%;
+}
+
+  .section5EndAboutUs {
+    margin-bottom: 3em;
+  }
+}
+
+/* Large desktops / TVs (≥ 1536px) */
+@media (min-width: 1536px) {
+  /* e.g. max out layout widths */
+}
